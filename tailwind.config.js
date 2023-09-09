@@ -11,7 +11,11 @@ module.exports = {
         mainBg: 'url("./public/images/main_background.jpg")',
       },
       spacing: {
-        navbarHeight: "60px",
+        navbarHeight: "40px",
+      },
+      colors: {
+        navbarBg: "#333232",
+        navbarTextSelected: "#A3560F",
       },
     },
   },
