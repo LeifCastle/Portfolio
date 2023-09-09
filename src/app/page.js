@@ -8,10 +8,22 @@ import Navbar from "./components/Navbar";
 import { useEffect } from "react";
 
 export default function Portfolio() {
-  //------Changes the navbar's background depending on scroll location
+  //------Sets navbar button text color to be 'selected'
+  function changeNavbarText(buttonNumber) {
+    let navButtons = document.querySelectorAll(".nav");
+    navButtons.forEach((button) => {
+      button.classList.remove("text-navbarTextSelected");
+      button.classList.add("text-white");
+    });
+    navButtons[buttonNumber].classList.remove("text-white");
+    navButtons[buttonNumber].classList.add("text-navbarTextSelected");
+  }
+
+  //------Handles navbar background and buttons' text color depending on scroll location
   useEffect(() => {
     let portfolio = document.querySelector("#portfolio");
     let navbar = document.querySelector("#navbar");
+    //---Sets the navbar's background type
     portfolio.addEventListener("scroll", () => {
       if (portfolio.scrollTop > window.innerHeight) {
         navbar.classList.remove("bg-transparent");
@@ -20,15 +32,24 @@ export default function Portfolio() {
         navbar.classList.remove("bg-navbarBg");
         navbar.classList.add("bg-transparent");
       }
+      //---Sets the navbar buttons' text color
+      for (let i = 0; i < 6; i++) {
+        if (
+          portfolio.scrollTop > window.innerHeight * (i - 0.25) &&
+          portfolio.scrollTop < window.innerHeight * (i + 1)
+        ) {
+          changeNavbarText(i);
+        }
+      }
     });
   });
 
   return (
     <main
       id="portfolio"
-      className="bg-mainBg bg-cover w-[100vw] snap-y snap-mandatory h-screen overflow-y-scroll scroll-smooth"
+      className="bg-mainBg bg-cover w-[100vw] snap-y snap-proximity h-screen overflow-y-scroll scroll-smooth"
     >
-      <Navbar />
+      <Navbar changeNavbarText={changeNavbarText} />
       <section id="home" className="h-screen snap-start">
         <Home />
       </section>

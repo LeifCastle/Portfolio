@@ -17,6 +17,9 @@ module.exports = {
         navbarBg: "#333232",
         navbarTextSelected: "#A3560F",
       },
+      fontFamily: {
+        display: ["Source\\ Code\\ Pro", "cursive"],
+      },
     },
   },
   plugins: [],
