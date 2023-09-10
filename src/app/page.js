@@ -25,33 +25,35 @@ export default function Portfolio() {
     let navbar = document.querySelector("#navbar");
     //---Sets the navbar's background type
     portfolio.addEventListener("scroll", () => {
-      if (portfolio.scrollTop > window.innerHeight) {
-        navbar.classList.remove("bg-transparent");
-        navbar.classList.add("bg-navbarBg");
-      } else {
-        navbar.classList.remove("bg-navbarBg");
-        navbar.classList.add("bg-transparent");
-      }
-      //---Sets the navbar buttons' text color
-      for (let i = 0; i < 6; i++) {
-        if (
-          portfolio.scrollTop > window.innerHeight * (i - 0.25) &&
-          portfolio.scrollTop < window.innerHeight * (i + 1)
-        ) {
-          changeNavbarText(i);
+      if (portfolio.scrollTop > 110) {
+        if (portfolio.scrollTop > window.innerHeight) {
+          navbar.classList.remove("bg-transparent");
+          navbar.classList.add("bg-navbarBg");
+        } else {
+          navbar.classList.remove("bg-navbarBg");
+          navbar.classList.add("bg-transparent");
+        }
+        //---Sets the navbar buttons' text color
+        for (let i = 0; i < 6; i++) {
+          if (
+            portfolio.scrollTop > window.innerHeight * (i - 0.25) &&
+            portfolio.scrollTop < window.innerHeight * (i + 1)
+          ) {
+            changeNavbarText(i);
+          }
         }
       }
     });
-  });
+  }, []);
 
   return (
     <main
       id="portfolio"
-      className="bg-mainBg bg-cover w-[100vw] snap-y snap-proximity h-screen overflow-y-scroll scroll-smooth"
+      className="bg-mainBg bg-cover w-[100vw] snap-y snap-mandatory h-screen overflow-y-scroll no-scrollbar scroll-smooth"
     >
       <Navbar changeNavbarText={changeNavbarText} />
       <section id="home" className="h-screen snap-start">
-        <Home />
+        <Home changeNavbarText={changeNavbarText} />
       </section>
       <section id="about" className="h-screen snap-start">
         <About />
