@@ -13,9 +13,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&family=Open+Sans:wght@400&family=Source+Code+Pro&display=swap"
           rel="stylesheet"
-        ></link>
+        />
       </head>
       <body className={inter.className}>{children}</body>
     </html>

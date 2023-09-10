@@ -18,17 +18,22 @@ module.exports = {
         githubLogoBlue: 'url("../../public/githubLogoBlue.svg")',
         downArrowWhite: 'url("../../public/downArrowWhite.svg")',
         downArrowGreen: 'url("../../public/downArrowGreen.svg")',
+        profile: 'url("../../public/profile.png")',
       },
       spacing: {
         navbarHeight: "40px",
       },
       colors: {
         navbarBg: "#333232",
+        aboutBg: "#2B2B2B",
         navbarTextSelected: "#A3560F",
         grayText: "#A8A8A8",
+        button1: "#444444",
       },
       fontFamily: {
-        display: ["Source\\ Code\\ Pro", "cursive"],
+        navbar: ["Source\\ Code\\ Pro", "cursive"],
+        regular: ["Open\\ Sans", "cursive"],
+        heading: ["Josefin\\ Sans", "cursive"],
       },
     },
   },

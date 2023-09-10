@@ -55,10 +55,10 @@ export default function Portfolio() {
       <section id="home" className="h-screen snap-start">
         <Home changeNavbarText={changeNavbarText} />
       </section>
-      <section id="about" className="h-screen snap-start">
+      <section id="about" className="h-screen snap-start bg-aboutBg">
         <About />
       </section>
-      <section id="resume" className="h-screen snap-start">
+      <section id="resume" className="h-screen snap-start bg-slate-400">
         <Resume />
       </section>
       <section id="projects" className="h-screen snap-start">

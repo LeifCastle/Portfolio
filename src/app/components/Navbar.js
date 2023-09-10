@@ -9,7 +9,7 @@ export default function Navbar({ changeNavbarText }) {
   return (
     <div
       id="navbar"
-      className="flex justify-center items-center gap-12 sticky top-0 h-navbarHeight bg-transparent font-bold font-display transition duration-[800ms] ease-in-out delay-100"
+      className="flex justify-center items-center gap-12 sticky top-0 h-navbarHeight bg-transparent font-bold font-navbar transition duration-[800ms] ease-in-out delay-100"
     >
       <a
         className="nav text-navbarTextSelected tracking-wider transition-colors"
