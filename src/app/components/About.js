@@ -1,3 +1,5 @@
+//import { Resume } from "public/Leifur_Castle_Resume.pdf";
+
 export default function About() {
   return (
     <div className="pt-navbarHeight flex gap-[100px]">
@@ -29,12 +31,16 @@ export default function About() {
           leifurcastle@gmail.com
         </p>
         <div className="flex gap-10 font-heading text-lg">
-          <button className="mt-10 bg-button1 rounded-md px-3 pt-1 h-[50px]">
-            Download Resume
-          </button>
-          <button className="mt-10 bg-button1 rounded-md px-3 pt-1 h-[50px]">
-            View Resume
-          </button>
+          <div className="flex items-center mt-10 bg-button1 rounded-md px-3 pt-1 h-[50px]">
+            <a href="/Leifur_Castle_Resume.pdf" download>
+              Download Resume
+            </a>
+          </div>
+          <div className="flex items-center mt-10 bg-button1 rounded-md px-3 pt-1 h-[50px]">
+            <a href="/Leifur_Castle_Resume.pdf" target="_blank">
+              View Resume
+            </a>
+          </div>
         </div>
       </div>
     </div>

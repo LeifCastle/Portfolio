@@ -80,7 +80,7 @@ export default function Home({ changeNavbarText }) {
       <div className="mb-[20vh] basis-[100px] flex flex-col items-center justify-end">
         <a
           id="downArrow"
-          className="inline-block w-[75px] h-[75px] bg-contain bg-downArrowWhite hover:bg-downArrowGreen hover:w-[85px] hover:h-[85px] transition-{opacity}  duration-[250ms]"
+          className="inline-block w-[75px] h-[75px] bg-contain bg-downArrowWhite hover:bg-downArrowGreen hover:w-[85px] hover:h-[85px] hover:cursor-pointer transition-{opacity}  duration-[250ms]"
           onClick={scrollToAbout}
           onMouseOver={scrollHint}
         ></a>
