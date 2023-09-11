@@ -11,11 +11,15 @@ export default function Portfolio() {
   function changeNavbarText(buttonNumber) {
     let navButtons = document.querySelectorAll(".nav");
     navButtons.forEach((button) => {
-      button.classList.remove("text-navbarTextSelected");
-      button.classList.add("text-white");
+      if (button.id !== buttonNumber.toString()) {
+        button.classList.remove("text-navbarTextSelected");
+        button.classList.remove("text-navbarHover");
+        button.classList.add("text-white");
+      } else {
+        button.classList.remove("text-white");
+        button.classList.add("text-navbarTextSelected");
+      }
     });
-    navButtons[buttonNumber].classList.remove("text-white");
-    navButtons[buttonNumber].classList.add("text-navbarTextSelected");
   }
 
   //------Handles navbar background and buttons' text color depending on scroll location
@@ -33,10 +37,29 @@ export default function Portfolio() {
           navbar.classList.add("bg-transparent");
         }
         //---Sets the navbar buttons' text color
-        for (let i = 0; i < 6; i++) {
+        //---Rather than just measuring by the window height (some sections such as contact are samller than the window, this measures by section height...window.innerHeight * 0.75 should really be some function between how tall a section is and the height of the window"
+        let heightHome = document.querySelector("#home").offsetHeight;
+        let heightAbout = document.querySelector("#about").offsetHeight;
+        let heightProjects = document.querySelector("#projects").offsetHeight;
+        let heightContact = document.querySelector("#contacts").offsetHeight;
+        let sectionHeights = [
+          heightHome,
+          heightAbout,
+          heightProjects,
+          heightContact,
+        ];
+        let totalHeight = 0;
+        let previousHeight = 0;
+        let previous = 0;
+        for (let i = 0; i < 4; i++) {
+          totalHeight += sectionHeights[i];
+          if (i !== 0) {
+            previous = i - 1;
+            previousHeight += sectionHeights[previous];
+          }
           if (
-            portfolio.scrollTop > window.innerHeight * (i - 0.25) &&
-            portfolio.scrollTop < window.innerHeight * (i + 1)
+            portfolio.scrollTop + window.innerHeight * 0.75 > previousHeight &&
+            portfolio.scrollTop < totalHeight
           ) {
             changeNavbarText(i);
           }
@@ -57,7 +80,7 @@ export default function Portfolio() {
       <section id="about" className="min-h-screen h-auto snap-start bg-aboutBg">
         <About />
       </section>
-      <section id="projects" className="h-auto snap-start">
+      <section id="projects" className="min-h-screen h-auto snap-start">
         <Projects />
       </section>
       <section id="contacts" className="h-auto snap-start bg-aboutBg">

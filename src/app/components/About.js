@@ -16,8 +16,8 @@ export default function About() {
     "PostgreSQL",
     "Mongoose",
     "Sequelize",
+    "Git",
     "Heroku",
-    "Twilio",
     "Selenium",
     "Postman",
   ];

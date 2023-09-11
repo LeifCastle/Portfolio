@@ -27,6 +27,7 @@ module.exports = {
         navbarBg: "#333232",
         aboutBg: "#2B2B2B",
         navbarTextSelected: "#A3560F",
+        navbarHover: "#f4ba85",
         grayText: "#A8A8A8",
         button1: "#444444",
         skillsBg: "#9E9C9C",
