@@ -29,6 +29,7 @@ module.exports = {
         navbarTextSelected: "#A3560F",
         grayText: "#A8A8A8",
         button1: "#444444",
+        skillsBg: "#9E9C9C",
       },
       fontFamily: {
         navbar: ["Source\\ Code\\ Pro", "cursive"],

@@ -24,20 +24,14 @@ export default function Navbar({ changeNavbarText }) {
         About
       </a>
       <a
-        className="nav text-white tracking-wide transition-colors hover:cursor-pointer"
-        onClick={() => handleNavigation("resume", 2)}
-      >
-        Resume
-      </a>
-      <a
         className="nav text-white transition-colors hover:cursor-pointer"
-        onClick={() => handleNavigation("projects", 3)}
+        onClick={() => handleNavigation("projects", 2)}
       >
         Projects
       </a>
       <a
         className="nav text-white transition-colors hover:cursor-pointer"
-        onClick={() => handleNavigation("contacts", 4)}
+        onClick={() => handleNavigation("contacts", 3)}
       >
         Contact
       </a>

@@ -1,7 +1,6 @@
 "use client";
 import Home from "./components/Home";
 import About from "./components/About";
-import Resume from "./components/Resume";
 import Projects from "./components/Projects";
 import Contacts from "./components/Contact";
 import Navbar from "./components/Navbar";
@@ -52,19 +51,16 @@ export default function Portfolio() {
       className="bg-mainBg bg-cover w-[100vw] snap-y snap-mandatory h-screen overflow-y-scroll no-scrollbar scroll-smooth"
     >
       <Navbar changeNavbarText={changeNavbarText} />
-      <section id="home" className="h-screen snap-start">
+      <section id="home" className="min-h-screen h-auto snap-start">
         <Home changeNavbarText={changeNavbarText} />
       </section>
-      <section id="about" className="h-screen snap-start bg-aboutBg">
+      <section id="about" className="min-h-screen h-auto snap-start bg-aboutBg">
         <About />
       </section>
-      <section id="resume" className="h-screen snap-start bg-slate-400">
-        <Resume />
-      </section>
-      <section id="projects" className="h-screen snap-start">
+      <section id="projects" className="h-auto snap-start">
         <Projects />
       </section>
-      <section id="contacts" className="h-screen snap-start">
+      <section id="contacts" className="h-auto snap-start bg-aboutBg">
         <Contacts />
       </section>
     </main>
