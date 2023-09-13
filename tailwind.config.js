@@ -26,6 +26,7 @@ module.exports = {
       colors: {
         navbarBg: "#333232",
         aboutBg: "#2B2B2B",
+        projectsBg: "#6D6C6C",
         navbarTextSelected: "#A3560F",
         navbarHover: "#f4ba85",
         grayText: "#A8A8A8",

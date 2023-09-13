@@ -1,7 +1,7 @@
 "use client";
 import Home from "./components/Home";
 import About from "./components/About";
-import Projects from "./components/Projects";
+import Projects from "./components/Projects/Projects";
 import Contacts from "./components/Contact";
 import Navbar from "./components/Navbar";
 import { useEffect } from "react";
@@ -80,7 +80,10 @@ export default function Portfolio() {
       <section id="about" className="min-h-screen h-auto snap-start bg-aboutBg">
         <About />
       </section>
-      <section id="projects" className="min-h-screen h-auto snap-start">
+      <section
+        id="projects"
+        className="min-h-screen h-auto snap-start bg-projectsBg"
+      >
         <Projects />
       </section>
       <section id="contacts" className="h-auto snap-start bg-aboutBg">
