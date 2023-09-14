@@ -14,6 +14,7 @@ export default function Projects() {
   let projectBase = [
     {
       title: "Birthday Buzz",
+      link: "http://www.birthdaybuz.net",
       overview:
         "Never forget another birthday! Birthday Buzz is a MERN stack application that sends you email reminders when it is someone's birthday. Just add your friends and family to your buzz list and we will automatically send you a customized reminder when their birthday is coming up or on the day of ",
       thumbnail: "bg-[url('../../public/BirthdayBuzz_Thumbnail.png')]",
@@ -21,7 +22,7 @@ export default function Projects() {
         "Frontend built with Next and Javascript, user accounts require email verification implemented with Twilio's API",
         "Back-end RESTful API server built with Node, Express.js, and MongoDB Atlas cloud database",
         "Utilized MongoDB & Mongoose to allow users to save friends and family to their 'Buzz List'",
-        "Integrated Heroku Scheduler to run daily scripts fulfilling each users Buzz List reminder requests",
+        "Integrated Heroku Cron To Go to run daily scripts fulfilling each users Buzz List reminder requests",
         "Automatic emailing implemented with SendGrid’s service API",
         "Frontend to backend seamless communication achieved with Axios HTTP requests, often sent with accompanying data in JSON format, and user authentication implemented with passport.js",
         "Collaborated with the team as a Git Master using Git forking workflow procedures and frequent commits",
@@ -41,8 +42,9 @@ export default function Projects() {
     },
     {
       title: "Colorz",
+      link: "http://www.colorznow.com",
       overview:
-        "Colorz is a theme creation tool allowing users to quickly create a wireframe of their website with text and background color optimization. Users can visualize how color choices would look on their website through the wireframe's representation. Note: Thumbnail shows an example use where a user recreates the theme for Colorz",
+        "Colorz is a theme creation tool allowing users to quickly create a wireframe of their website with text and background color optimization. Users can visualize how color choices would look on their website through the wireframe's representation. Thumbnail shows an example use where a user recreates the theme for Colorz",
       thumbnail: "bg-[url('../../public/Colorz_Thumbnail.png')]",
       details: [
         "Utilized Next and Javascript to create a dynamic front-end application boasting user accounts, wireframing tools, color and styling options, and user theme to CSS color pallet exportation",
@@ -68,6 +70,7 @@ export default function Projects() {
     },
     {
       title: "Lava Run",
+      link: "https://lavarunn.netlify.app/",
       overview:
         "LavaRun is a simple game where you control a lava creature and move him between three lanes to choose different shields that increase or decrease your shields. Do the math to figure out how get enough shields to survive the lava!",
       thumbnail: "bg-[url('../../public/LavaRun_Thumbnail.png')]",
@@ -123,6 +126,7 @@ export default function Projects() {
         <ProjectThumbnail
           title={projectBase[current].title}
           thumbnail={projectBase[current].thumbnail}
+          link={projectBase[current].link}
         />
         <div className="h-[100px]">
           <div
