@@ -1,19 +1,16 @@
 export default function ProjectDescription({ project }) {
   return (
-    <div className="flex">
-      <p className="w-[calc(15vw*2.0661)]">
-        Never forget another birthday! Birthday Buzz is a MERN stack application
-        that sends you email reminders when it's someone's birthday. Simply add
-        your friends and family to your "buzz list" and we'll automatically send
-        you a customized reminder when they're birthday is coming up or on the
-        day of.
-      </p>
-      <p className="w-[calc(15vw*2.0661)]">
-        Features Email verification required for all user accounts (no
-        spam/malicious usage) Quick & Simple process to add friends and family
-        to your "buzz list" (reminder list) Choose when you want to be reminded
-        Create a custom reminder message
-      </p>
+    <div className="flex flex-col bg-button1 rounded-md w-[60vw] h-[70vh] overflow-y-scroll no-scrollbar">
+      <div className="flex flex-col items-center">
+        <p className="text-3xl w-full  font-heading text-center pt-[10px]">
+          {project.title}
+        </p>
+        <hr className="w-[20vw] mt-1 mb-4 border-[3px] border-slate-200 rounded-full opacity-25"></hr>
+      </div>
+      <div className="mx-4">
+        <p className="">{project.overview}</p>
+        <p className="">{project.techStack}</p>
+      </div>
     </div>
   );
 }
