@@ -19,11 +19,11 @@ export default function Projects() {
         "Never forget another birthday! Birthday Buzz is a MERN stack application that sends you email reminders when it is someone's birthday. Just add your friends and family to your buzz list and we will automatically send you a customized reminder when their birthday is coming up or on the day of ",
       thumbnail: "bg-[url('../../public/BirthdayBuzz_Thumbnail.png')]",
       details: [
-        "Frontend built with Next and Javascript, user accounts require email verification implemented with Twilio's API",
+        "Frontend built with Next and Javascript, user accounts require email verification implemented with SendGrid",
         "Back-end RESTful API server built with Node, Express.js, and MongoDB Atlas cloud database",
         "Utilized MongoDB & Mongoose to allow users to save friends and family to their 'Buzz List'",
         "Integrated Heroku Cron To Go to run daily scripts fulfilling each users Buzz List reminder requests",
-        "Automatic emailing implemented with SendGrid’s service API",
+        "Automatic emailing implemented with SendGrid",
         "Frontend to backend seamless communication achieved with Axios HTTP requests, often sent with accompanying data in JSON format, and user authentication implemented with passport.js",
         "Collaborated with the team as a Git Master using Git forking workflow procedures and frequent commits",
         "Successfully deployed backend and frontend to Heroku with a custom domain (www.birthdaybuz.net)",
@@ -48,7 +48,7 @@ export default function Projects() {
       thumbnail: "bg-[url('../../public/Colorz_Thumbnail.png')]",
       details: [
         "Utilized Next and Javascript to create a dynamic front-end application boasting user accounts, wireframing tools, color and styling options, and user theme to CSS color pallet exportation",
-        "Employed React hooks to create drag & drop resizable widgets capable of quickly wireframing an existing or new website's basic layout and text",
+        "Employed React hooks to create drag & drop resizable widgets capable of quickly wireframing basic layout and text for an existing or new website",
         "Full background, text, and font customization enables users to immediately visualize how color choices would look on their website through the wireframe’s representation",
         "Implemented a back-end RESTful API server using Node and Express.js and an integrated MongoDB database",
         "Enabled users to save themes to a User model of multi-level embedded documents with MongoDB & Mongoose",

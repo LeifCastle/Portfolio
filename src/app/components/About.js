@@ -31,21 +31,21 @@ export default function About() {
       <div className="flex flex-col w-[60vw] mt-[10vh]">
         <p className="text-3xl font-heading">About Me</p>
         <p className="ml-2 mt-4 text-grayText font-regular tracking-wide">
-          I'm a full stack software engineer with a greater focus on the front
-          end. Initially just a better way to make money, coding has evolved
-          into a hobby I'm quite passionate about. Nothing is more satisfying
-          than finding a problem or need and then taking a solution from the
-          drawingboard into reality. With a background in construction, customer
-          support, and leadership, I've developed an impeccable work ethic,
-          effective communication skills, and a constant drive to learn. I began
-          my career transition early 2023 and six months later graduated from
-          General Assembly's software engineering immersive with over 400 hours
-          of hands-on learing and four major projects under my belt. While
-          there's always more to learn, I'm proficient in multiple languages,
-          frameworks, libraries, and databases, most notably MERN stack. Highly
-          self-motived and constantly driven to do more and do better, I'm
-          looking for my next opportuntity to make a difference in the tech
-          industry with my unique skillset and drive.
+          I&apos;m a full stack software engineer with a greater focus on the
+          front end. Initially just a better way to make money, coding has
+          evolved into a hobby I&apos;m quite passionate about. Nothing is more
+          satisfying than finding a problem or need and then taking a solution
+          from the drawingboard into reality. With a background in construction,
+          customer support, and leadership, I&apos;ve developed an impeccable
+          work ethic, effective communication skills, and a constant drive to
+          learn. I began my career transition early 2023 and six months later
+          graduated from General Assembly&apos;s software engineering immersive
+          with over 400 hours of hands-on learing and four major projects under
+          my belt. While there&apos;s always more to learn, I&apos;m proficient
+          in multiple languages, frameworks, libraries, and databases, most
+          notably MERN stack. Highly self-motived and constantly driven to do
+          more and do better, I&apos;m looking for my next opportuntity to make
+          a difference in the tech industry with my unique skillset and drive.
         </p>
         <p className="text-3xl mt-10 font-heading">Tech Stack</p>
         <div className="flex flex-wrap">{skills}</div>

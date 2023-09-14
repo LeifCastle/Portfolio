@@ -43,7 +43,7 @@ export default function Home({ changeNavbarText }) {
 
   return (
     <div className="flex flex-col items-center pt-navbarHeight h-screen">
-      <h1 className="mt-12 text-7xl ">I'm Leifur Castle</h1>
+      <h1 className="mt-12 text-7xl ">I&apos;m Leifur Castle</h1>
       <p className="mt-6 text-lg w-[50vw] text-center text-grayText">
         I'm a <span className="text-white"> software developer</span> from
         General Assembly with expertise in
