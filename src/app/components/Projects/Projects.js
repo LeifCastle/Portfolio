@@ -48,7 +48,7 @@ export default function Projects() {
       thumbnail: "bg-[url('../../public/Colorz_Thumbnail.png')]",
       details: [
         "Utilized Next and Javascript to create a dynamic front-end application boasting user accounts, wireframing tools, color and styling options, and user theme to CSS color pallet exportation",
-        "Employed React hooks to create drag & drop resizable widgets capable of quickly wireframing an existing or new website’s basic layout and text",
+        "Employed React hooks to create drag & drop resizable widgets capable of quickly wireframing an existing or new website's basic layout and text",
         "Full background, text, and font customization enables users to immediately visualize how color choices would look on their website through the wireframe’s representation",
         "Implemented a back-end RESTful API server using Node and Express.js and an integrated MongoDB database",
         "Enabled users to save themes to a User model of multi-level embedded documents with MongoDB & Mongoose",

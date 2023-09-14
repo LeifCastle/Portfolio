@@ -2,7 +2,7 @@ import Skill from "../Skill";
 
 export default function ProjectDescription({ project }) {
   let details = project.details.map((detail) => {
-    return <li>{detail}</li>;
+    return <li key={detail}>{detail}</li>;
   });
 
   let skills = project.techStack.map((skill) => {
