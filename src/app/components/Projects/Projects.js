@@ -119,7 +119,7 @@ export default function Projects() {
         <div className="h-[100px] flex md:items-end">
           <div
             id="downArrow"
-            className="w-[60px] h-[60px] md:w-[90px] md:h-[90px] bg-contain bg-downArrowWhite hover:bg-downArrowGreen md:hover:w-[100px] md:hover:h-[100px] hover:cursor-pointer origin-center rotate-90 md:rotate-180  transition-{opacity} duration-[250ms]"
+            className="hidden md:block w-[90px] h-[90px] bg-contain bg-downArrowWhite hover:bg-downArrowGreen hover:w-[100px] hover:h-[100px] hover:cursor-pointer origin-center rotate-180  transition-{opacity} duration-[250ms]"
             onClick={(e) => changeProject("prev", e)}
           ></div>
         </div>
@@ -131,12 +131,15 @@ export default function Projects() {
           />
         </div>
         <div className="md:hidden">
-          <ProjectDescription project={projectBase[current]} />
+          <ProjectDescription
+            project={projectBase[current]}
+            changeProject={changeProject}
+          />
         </div>
-        <div className="h-[100px]">
+        <div className="hidden md:block h-[100px]">
           <div
             id="downArrow"
-            className="w-[60px] h-[60px] md:w-[90px] md:h-[90px] bg-contain bg-downArrowWhite hover:bg-downArrowGreen md:hover:w-[100px] md:hover:h-[100px] hover:cursor-pointer origin-center rotate-[270deg] md:rotate-0 transition-{opacity}  duration-[250ms]"
+            className="w-[90px] h-[90px] bg-contain bg-downArrowWhite hover:bg-downArrowGreen hover:w-[100px] hover:h-[100px] hover:cursor-pointer origin-center rotate-0 transition-{opacity}  duration-[250ms]"
             onClick={(e) => changeProject("next", e)}
           ></div>
         </div>
