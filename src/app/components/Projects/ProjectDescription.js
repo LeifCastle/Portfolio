@@ -22,7 +22,7 @@ export default function ProjectDescription({ project }) {
           </a>
         </div>
         <div className="basis-1/3 flex flex-col">
-          <p className="text-3xl w-full  font-heading text-center pt-[10px]">
+          <p className="text-3xl w-full  font-heading text-center text-white pt-[10px]">
             {project.title}
           </p>
           <hr className="w-[20vw] mt-1 mb-4 border-[3px] border-slate-200 rounded-full opacity-25"></hr>

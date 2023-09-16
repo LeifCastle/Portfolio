@@ -1,6 +1,6 @@
 export default function ProjectThumbnail({ title, thumbnail, link }) {
   return (
-    <div className="flex flex-col items-center justify-center bg-button1 rounded-md overflow-y-hidden">
+    <div className="flex flex-col items-center justify-center bg-button1 rounded-md overflow-y-hidden text-white">
       <p className="text-3xl w-full rounded-tr-md rounded-tl-md h-[50px] bg-navbarBg font-heading text-center pt-[10px]">
         {title}
       </p>

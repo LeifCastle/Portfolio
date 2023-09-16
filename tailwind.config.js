@@ -10,6 +10,17 @@ module.exports = {
       variants: {
         transitionProperty: ["responsive", "motion-safe", "motion-reduce"],
       },
+      screens: {
+        mobile: { min: "0px", max: "640px" },
+        tablet: { min: "640px", max: "768px" },
+        lgMobile: "375px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        //"2xl": "1536px",
+        // => @media (min-width: 1536px) { ... }
+      },
       backgroundImage: {
         mainBg: 'url("../../public/main_background.jpg")',
         linkedInLogoWhite: 'url("../../public/linkedInLogoWhite.svg")',

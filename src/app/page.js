@@ -71,7 +71,7 @@ export default function Portfolio() {
   return (
     <main
       id="portfolio"
-      className="bg-mainBg bg-cover w-[100vw] snap-y snap-mandatory h-screen overflow-y-scroll no-scrollbar scroll-smooth"
+      className="bg-mainBg bg-cover w-[100vw] sm:snap-y sm:snap-mandatory h-screen overflow-y-scroll no-scrollbar scroll-smooth"
     >
       <Navbar changeNavbarText={changeNavbarText} />
       <section id="home" className="min-h-screen h-auto snap-start">

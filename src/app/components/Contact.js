@@ -11,7 +11,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="flex flex-col items-center py-5">
+    <div className="flex flex-col items-center py-5 text-white">
       <p className="text-3xl font-heading">Contact Me</p>
       <hr className="w-[45vw] mt-2 border-slate-500 opacity-25"></hr>
       <div

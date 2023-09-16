@@ -42,9 +42,11 @@ export default function Home({ changeNavbarText }) {
   }
 
   return (
-    <div className="flex flex-col items-center pt-navbarHeight h-screen">
-      <h1 className="mt-12 text-7xl ">I&apos;m Leifur Castle</h1>
-      <p className="mt-6 text-lg w-[50vw] text-center text-grayText">
+    <div className="flex flex-col text-center items-center pt-navbarHeight h-screen">
+      <h1 className="mt-12 text-4xl sm:text-7xl text-white">
+        I&apos;m Leifur Castle
+      </h1>
+      <p className="mt-6 text-lg w-[90vw] lgMobile:w-[80vw] sm:w-[60vw] lg:w-[50vw] text-center text-grayText">
         I&apos;m a <span className="text-white"> software developer</span> from
         General Assembly with expertise in
         <span className="text-white"> JavaScript</span> and{" "}
@@ -77,7 +79,7 @@ export default function Home({ changeNavbarText }) {
         <div className="grow"></div>
       </div>
       <div className="grow"></div>
-      <div className="mb-[20vh] basis-[100px] flex flex-col items-center justify-end">
+      <div className="hidden sm:flex mb-[20vh] basis-[100px] flex-col items-center justify-end">
         <a
           id="downArrow"
           className="animate-pulse inline-block w-[75px] h-[75px] bg-contain bg-downArrowWhite hover:bg-downArrowGreen hover:w-[85px] hover:h-[85px] hover:cursor-pointer transition-{opacity}  duration-[250ms]"
