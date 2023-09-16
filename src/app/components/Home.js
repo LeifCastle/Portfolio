@@ -42,11 +42,11 @@ export default function Home({ changeNavbarText }) {
   }
 
   return (
-    <div className="flex flex-col text-center items-center pt-navbarHeight h-screen">
+    <div className="flex flex-col text-center items-center pt-navbarHeight">
       <h1 className="mt-12 text-4xl sm:text-7xl text-white">
         I&apos;m Leifur Castle
       </h1>
-      <p className="mt-6 text-lg w-[90vw] lgMobile:w-[80vw] sm:w-[60vw] lg:w-[50vw] text-center text-grayText">
+      <p className="mt-6 text-lg w-[90vw] sm:w-[80vw] lg:w-[60vw] xl:w-[50vw] text-center text-grayText">
         I&apos;m a <span className="text-white"> software developer</span> from
         General Assembly with expertise in
         <span className="text-white"> JavaScript</span> and{" "}
