@@ -10,8 +10,8 @@ export default function ProjectDescription({ project }) {
   });
 
   return (
-    <div className="flex flex-col bg-button1 rounded-md w-[60vw] h-[70vh] overflow-y-scroll no-scrollbar">
-      <div className="flex justify-center">
+    <div className="flex flex-col bg-button1 rounded-md w-[60vw] h-[70vh]">
+      <div className="flex flex-col md:flex-row items-center justify-center sticky top-0 bg-navbarBg">
         <div className="basis-1/3 flex items-center">
           <a
             href={project.link}
@@ -21,20 +21,20 @@ export default function ProjectDescription({ project }) {
             Visit Website
           </a>
         </div>
-        <div className="basis-1/3 flex flex-col">
-          <p className="text-3xl w-full  font-heading text-center text-white pt-[10px]">
+        <div className="basis-1/3 flex items-center flex-col">
+          <p className="md:mt-2 text-3xl w-full font-heading text-center text-white pt-[10px]">
             {project.title}
           </p>
           <hr className="w-[20vw] mt-1 mb-4 border-[3px] border-slate-200 rounded-full opacity-25"></hr>
         </div>
         <div className="basis-1/3"></div>
       </div>
-      <div className="mx-4">
+      <div className="ml-4 pr-4 pt-4 overflow-y-scroll">
         <p className="text-grayText">{project.overview}</p>
         <div className="flex m-4">
           <ul className="list-disc text-grayText">{details}</ul>
         </div>
-        <div className="flex flex-wrap">{skills}</div>
+        <div className="flex flex-wrap mb-4">{skills}</div>
       </div>
     </div>
   );

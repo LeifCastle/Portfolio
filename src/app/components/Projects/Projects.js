@@ -115,28 +115,35 @@ export default function Projects() {
 
   return (
     <div className="flex justify-center items-center w-full h-screen">
-      <div className="flex flex-col items-center mr-10">
-        <div className="h-[100px] flex items-end">
+      <div className="flex md:flex-col items-center md:mr-10">
+        <div className="h-[100px] flex md:items-end">
           <div
             id="downArrow"
-            className="w-[90px] h-[90px] bg-contain bg-downArrowWhite hover:bg-downArrowGreen hover:w-[100px] hover:h-[100px] hover:cursor-pointer origin-center rotate-180  transition-{opacity} duration-[250ms]"
+            className="w-[60px] h-[60px] md:w-[90px] md:h-[90px] bg-contain bg-downArrowWhite hover:bg-downArrowGreen md:hover:w-[100px] md:hover:h-[100px] hover:cursor-pointer origin-center rotate-90 md:rotate-180  transition-{opacity} duration-[250ms]"
             onClick={(e) => changeProject("prev", e)}
           ></div>
         </div>
-        <ProjectThumbnail
-          title={projectBase[current].title}
-          thumbnail={projectBase[current].thumbnail}
-          link={projectBase[current].link}
-        />
+        <div className="hidden md:block">
+          <ProjectThumbnail
+            title={projectBase[current].title}
+            thumbnail={projectBase[current].thumbnail}
+            link={projectBase[current].link}
+          />
+        </div>
+        <div className="md:hidden">
+          <ProjectDescription project={projectBase[current]} />
+        </div>
         <div className="h-[100px]">
           <div
             id="downArrow"
-            className="w-[90px] h-[90px] bg-contain bg-downArrowWhite hover:bg-downArrowGreen hover:w-[100px] hover:h-[100px] hover:cursor-pointer origin-center  transition-{opacity}  duration-[250ms]"
+            className="w-[60px] h-[60px] md:w-[90px] md:h-[90px] bg-contain bg-downArrowWhite hover:bg-downArrowGreen md:hover:w-[100px] md:hover:h-[100px] hover:cursor-pointer origin-center rotate-[270deg] md:rotate-0 transition-{opacity}  duration-[250ms]"
             onClick={(e) => changeProject("next", e)}
           ></div>
         </div>
       </div>
-      <ProjectDescription project={projectBase[current]} />
+      <div className="hidden md:block">
+        <ProjectDescription project={projectBase[current]} />
+      </div>
     </div>
   );
 }

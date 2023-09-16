@@ -8,7 +8,7 @@ export default function Home({ changeNavbarText }) {
   //------Scrolls to about page when down arrow is clicked
   function scrollToAbout() {
     hinting.current = false;
-    document.querySelector("#portfolio").classList.add("snap-y");
+    document.querySelector("#portfolio").classList.add("sm:snap-y");
     document.querySelector("#downArrow").classList.remove("absolute");
     document.querySelector("#downArrow").classList.remove("bottom-[20vh]");
     document.querySelector("#about").scrollIntoView();
@@ -21,7 +21,7 @@ export default function Home({ changeNavbarText }) {
       hinting.current = true;
       document.querySelector("#downArrow").classList.add("absolute");
       document.querySelector("#downArrow").classList.add("bottom-[20vh]");
-      document.querySelector("#portfolio").classList.remove("snap-y");
+      document.querySelector("#portfolio").classList.remove("sm:snap-y");
       document.querySelector("#portfolio").scrollBy(0, 50);
       setTimeout(() => {
         if (hinting.current) {
@@ -29,7 +29,7 @@ export default function Home({ changeNavbarText }) {
         }
         setTimeout(() => {
           if (hinting.current) {
-            document.querySelector("#portfolio").classList.add("snap-y");
+            document.querySelector("#portfolio").classList.add("sm:snap-y");
             document.querySelector("#downArrow").classList.remove("absolute");
             document
               .querySelector("#downArrow")
@@ -42,7 +42,7 @@ export default function Home({ changeNavbarText }) {
   }
 
   return (
-    <div className="flex flex-col text-center items-center pt-navbarHeight">
+    <div className="flex flex-col text-center items-center pt-navbarHeight min-h-screen">
       <h1 className="mt-12 text-4xl sm:text-7xl text-white">
         I&apos;m Leifur Castle
       </h1>
