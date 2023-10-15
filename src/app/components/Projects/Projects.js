@@ -14,7 +14,7 @@ export default function Projects() {
   let projectBase = [
     {
       title: "Birthday Buzz",
-      link: "http://www.birthdaybuz.net",
+      link: "https://birthdaybuzz.io",
       overview:
         "Never forget another birthday! Birthday Buzz is a MERN stack application that sends you email reminders when it is someone's birthday. Just add your friends and family to your buzz list and we will automatically send you a customized reminder when their birthday is coming up or on the day of ",
       thumbnail: "bg-[url('../../public/BirthdayBuzz_Thumbnail.png')]",
@@ -123,13 +123,17 @@ export default function Projects() {
             onClick={(e) => changeProject("prev", e)}
           ></div>
         </div>
-        <div className="hidden md:block">
+        <a
+          className="hidden md:block"
+          href={projectBase[current].link}
+          target="_blank"
+        >
           <ProjectThumbnail
             title={projectBase[current].title}
             thumbnail={projectBase[current].thumbnail}
             link={projectBase[current].link}
           />
-        </div>
+        </a>
         <div className="md:hidden">
           <ProjectDescription
             project={projectBase[current]}
